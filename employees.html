@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Responsive HTML Admin Dashboard Template based on Bootstrap 5">
+    <meta name="author" content="NobleUI">
+    <meta name="keywords" content="nobleui, bootstrap, bootstrap 5, bootstrap5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+    <title>CANVAS ICT</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- End fonts -->
+
+    <!-- core:css -->
+    <link rel="stylesheet" href="assets/vendors/core/core.css">
+    <!-- endinject -->
+
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="assets/vendors/flatpickr/flatpickr.min.css">
+    <!-- End plugin css for this page -->
+    <link rel="stylesheet" href="assets/vendors/datatables.net-bs5/dataTables.bootstrap5.css">
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="assets/fonts/feather-font/css/iconfont.css">
+    <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
+    <!-- endinject -->
+
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/demo1/style.css">
+    <!-- End layout styles -->
+
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+</head>
+<body>
+<div class="main-wrapper">
+
+    <!-- partial:partials/_sidebar.html -->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <a href="#" class="sidebar-brand">
+                CANVAS<span class="ml-5">ICT</span>
+            </a>
+            <div class="sidebar-toggler not-active">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="sidebar-body">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link">
+                        <i class="link-icon" data-feather="home"></i>
+                        <span class="link-title">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#emails2" role="button" aria-expanded="false" aria-controls="emails2">
+                        <i data-feather="clock" class="link-icon icon-sm "></i>
+                        <span class="link-title">My Businesses</span>
+                        <i class="link-arrow" data-feather="chevron-right"></i>
+                    </a>
+                    <div class="collapse" id="emails2">
+                        <ul class="nav sub-menu">
+                            <li class="nav-item">
+                                <a href="details.html" class="nav-link">Details</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="clients.html" class="nav-link">Clients </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="employees.html" class="nav-link">Employees</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="employees.html" class="nav-link">Subcontractor</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="users.html" class="nav-link">Users</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="attachments.html" class="nav-link">Attachments</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="contracts.html" class="nav-link">
+                        <i class="link-icon" data-feather="calendar"></i>
+                        <span class="link-title">Contracts</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#emails" role="button" aria-expanded="false" aria-controls="emails">
+                        <i data-feather="clock" class="link-icon icon-sm "></i>
+                        <span class="link-title">Timesheets</span>
+                        <i class="link-arrow" data-feather="chevron-right"></i>
+                    </a>
+                    <div class="collapse" id="emails">
+                        <ul class="nav sub-menu">
+                            <li class="nav-item">
+                                <a href="timesheets.html" class="nav-link">View Timesheets</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Outstanding Timesheets </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="create-timesheet.html" class="nav-link">Bulk Create Timesheet</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="invoices.html" class="nav-link">
+                        <i data-feather="file-text" class=" link-icon"></i>
+                        <span class="link-title">Invoice</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#report" role="button" aria-expanded="false" aria-controls="report">
+                        <i class="link-icon" data-feather="file"></i>
+                        <span class="link-title">Reports</span>
+                        <i class="link-arrow" data-feather="chevron-right"></i>
+                    </a>
+                    <div class="collapse" id="report">
+                        <ul class="nav sub-menu">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Report 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Report 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Report 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="link-icon" data-feather="folder-minus"></i>
+                        <span class="link-title">Documents</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#links" role="button" aria-expanded="false" aria-controls="links">
+                        <i class="link-icon" data-feather="link-2"></i>
+                        <span class="link-title">Links</span>
+                        <i class="link-arrow" data-feather="chevron-right"></i>
+                    </a>
+                    <div class="collapse" id="links">
+                        <ul class="nav sub-menu">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Link 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Link 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Link 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- partial -->
+
+    <div class="page-wrapper">
+
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar">
+
+        </nav>
+        <!-- partial -->
+        <div class="page-content">
+            <nav class="page-breadcrumb">
+                <h4>Employees</h4>
+            </nav>
+            <div class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="dataTableExample2" class="table">
+                                    <thead>
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Subcontractor Entity</th>
+                                        <th>First Name</th>
+                                        <th>Last name</th>
+                                        <th>Username</th>
+                                        <th>Mobile Number</th>
+                                        <th>Active</th>
+                                        <th>View Contracts</th>
+                                        <th>Edit</th>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Hi Tech Personal</td>
+                                        <td></td>
+                                        <td>Tim</td>
+                                        <td>Bajaj</td>
+                                        <td>Tim_Bajaj</td>
+                                        <td>+61409909990</td>
+                                        <td>Yes</td>
+                                        <td class="text-center">  <i data-feather="external-link" class="me-2 icon-sm" ></i> </td>
+                                        <td class="text-center">  <i data-feather="edit" class="feather feather-edit" ></i> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2 Hi Tech Personal</td>
+                                        <td></td>
+                                        <td>Asif</td>
+                                        <td>Ahmad</td>
+                                        <td>asif_ahmad</td>
+                                        <td>+6147778990</td>
+                                        <td>Yes</td>
+                                        <td class="text-center">  <i data-feather="external-link" class="me-2 icon-sm" ></i> </td>
+                                        <td class="text-center">  <i data-feather="edit" class="feather feather-edit" ></i> </td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-center px-4 py-3 border-top small  ">
+            <p class="text-muted mb-1 mb-md-0 ">Copyright © 2024 <a href="#" target="_blank">CANVAS ICT</a>.</p>
+
+        </footer>
+        <!-- partial -->
+
+    </div>
+</div>
+
+<!-- core:js -->
+<script src="assets/vendors/core/core.js"></script>
+<!-- endinject -->
+<script src="assets/vendors/core/core.js"></script>
+<!-- Plugin js for this page -->
+<script src="assets/vendors/flatpickr/flatpickr.min.js"></script>
+<script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
+<!-- End plugin js for this page -->
+
+<!-- inject:js -->
+<script src="assets/vendors/feather-icons/feather.min.js"></script>
+<script src="assets/js/template.js"></script>
+<!-- endinject -->
+
+<!-- Custom js for this page -->
+<script src="assets/js/dashboard-light.js"></script>
+<!-- End custom js for this page -->
+
+<!-- endinject -->
+
+<!-- Plugin js for this page -->
+<script src="assets/vendors/datatables.net/jquery.dataTables.js"></script>
+<script src="assets/vendors/datatables.net-bs5/dataTables.bootstrap5.js"></script>
+<!-- End plugin js for this page -->
+
+<!-- inject:js -->
+<script src="assets/vendors/feather-icons/feather.min.js"></script>
+<script src="assets/js/template.js"></script>
+<!-- endinject -->
+
+<!-- Custom js for this page -->
+<script src="assets/js/data-table.js"></script>
+<!-- End custom js for this page -->
+<!-- core:js -->
+<script src="assets/vendors/core/core.js"></script>
+<!-- endinject -->
+
+<!-- Plugin js for this page -->
+<script src="assets/vendors/flatpickr/flatpickr.min.js"></script>
+<script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
+<!-- End plugin js for this page -->
+
+<!-- inject:js -->
+<script src="assets/vendors/feather-icons/feather.min.js"></script>
+<script src="assets/js/template.js"></script>
+<!-- endinject -->
+
+<!-- Custom js for this page -->
+<script src="assets/js/dashboard-light.js"></script>
+<!-- End custom js for this page -->
+
+</body>
+</html>    <!DOCTYPE html>
+
+</html>
